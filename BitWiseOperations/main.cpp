@@ -13,7 +13,11 @@ void CountNumberOfBits(unsigned int x, unsigned int *bits_1, unsigned int *bits_
 int main()
 {
     
+    unsigned int bit_1s = 0, bit_0s = 0;
     
+    CountNumberOfBits(123456, &bit_1s, &bit_0s);
+    
+    printf("bit_1s: %d, bit_0s: %d \n", bit_1s, bit_0s);
     
     return 0;
 }
@@ -25,9 +29,9 @@ void CountNumberOfBits(unsigned int x, unsigned int *bits_1, unsigned int *bits_
    while (x)
    {
        if (x & 1)
-           bits_1++;
+           (*bits_1)++;
        else
-           bits_0++;
+           (*bits_0)++;
        
        x >>= 1;
    }
