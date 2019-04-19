@@ -5,6 +5,8 @@
 //  Created by venkata bethamcharla on 4/18/19.
 //  Copyright © 2019 VENKATA. All rights reserved.
 //
+//  These programs are written
+//  after reading C Programming language by Kernighan and Ritchie
 
 #include <stdio.h>
 
