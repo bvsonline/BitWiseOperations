@@ -6,10 +6,31 @@
 //  Copyright © 2019 VENKATA. All rights reserved.
 //
 
-#include <iostream>
+#include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+void CountNumberOfBits(unsigned int x, unsigned int *bits_1, unsigned int *bits_0);
+
+int main()
+{
+    
+    
+    
     return 0;
+}
+
+
+
+void CountNumberOfBits(unsigned int x, unsigned int *bits_1, unsigned int *bits_0)
+{
+   while (x)
+   {
+       if (x & 1)
+           bits_1++;
+       else
+           bits_0++;
+       
+       x >>= 1;
+   }
+
+    return;
 }
