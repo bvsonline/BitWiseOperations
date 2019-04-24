@@ -141,7 +141,7 @@ unsigned int reverseBinaryNumber(unsigned int n)
 }
 
 unsigned int LUT[16] = {0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4};
-
+// Count number of 1's using look up table
 unsigned int count1sbylut(unsigned int n)
 {
     unsigned int num_1s = 0;
@@ -153,6 +153,7 @@ unsigned int count1sbylut(unsigned int n)
     return num_1s;
 }
 
+// Swap even and odd bits in given integer
 unsigned int swapOddandEvenBits(unsigned int n)
 {
     return ((n & 0xaaaaaaaa) >> 1) | ((n & 0x55555555) << 1);
